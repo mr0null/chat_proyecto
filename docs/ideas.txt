@@ -1,0 +1,3 @@
+Los mensajes tendrán reacciones o votos binarios, y los más destacados
+se mostrarán en la home, así como chats rápidos o lentos (pseudoposts)
+destacados.

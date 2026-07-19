@@ -3,6 +3,7 @@
 Diseñar y desarrollar una aplicación web que permita a los usuarios interactuar mediante conversaciones, facilitando su creación, persistencia y reorganización.
 
 # Objetivos específicos
+
 ## General
 - Permitir a los usuarios enviar y recibir mensajes.
 - Persistir conversaciones y mensajes.
@@ -38,7 +39,9 @@ Puede originarse de dos formas:
 A partir de un post existente que se archiva.
 Como una conversación creada directamente para el Arca, destinada exclusivamente a conservar contenido histórico.
 Cada conversación pertenecerá a una categoría para preservar distinto tipo de contenido.
+Toda publicación archivada en el arca tiene una opción de ser expandida, ya 
+sea a través de una publicación que la continúe (sigue el formato arbol) o a
+través de un pedido de edición hacia la moderación, esto con el fin de
+expandir la información si es que aporta.
 
-# Objetivos de seguridad
-- Se otorgaran maximo 4 tokens por ip.
-
+# Requisitos funcionales

@@ -39,9 +39,3 @@ Puede originarse de dos formas:
 A partir de un post existente que se archiva.
 Como una conversación creada directamente para el Arca, destinada exclusivamente a conservar contenido histórico.
 Cada conversación pertenecerá a una categoría para preservar distinto tipo de contenido.
-Toda publicación archivada en el arca tiene una opción de ser expandida, ya 
-sea a través de una publicación que la continúe (sigue el formato arbol) o a
-través de un pedido de edición hacia la moderación, esto con el fin de
-expandir la información si es que aporta.
-
-# Requisitos funcionales

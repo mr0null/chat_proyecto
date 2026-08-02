@@ -30,3 +30,7 @@ será revisada por los administradores.
 # Seguridad
 
 - Se eliminarán los metadatos de las imágenes subidas al sitio
+
+# Categorías
+
+- Categoría encuestas para jijearse y realizar mmm estadísticas

@@ -16,6 +16,9 @@ una biblioteca que indexe toda la multimedia subida en el antro y la junte y cla
 - El arca debe ser descargable en su totalidad, o por categoría.
 
 - Los usuarios destacados o "diamonds" podrán archivar posteos en el arca en un futuro.
+
+- Permitir que cada categoría defina atributos de clasificación propios. Las entradas podrán asociarse a uno o más atributos mediante una tabla intermedia, permitiendo tanto la clasificación como la búsqueda avanzada. Estos atributos también podrán ser editados y consensuados por la comunidad.
+
 # Mecánicas
 
 - Sistema de tags para identificar contenido

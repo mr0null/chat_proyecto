@@ -1,0 +1,6 @@
+@ForoChat.Api_HostAddress = http://localhost:5255
+
+GET {{ForoChat.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,3 +1,14 @@
+CREATE DATABASE foro_chat;
+GO
+
+USE foro_chat;
+GO
+
+CREATE TABLE rol(
+    id INT PRIMARY KEY IDENTITY(1,1),
+    nombre VARCHAR(30) UNIQUE NOT NULL
+);
+
 CREATE TABLE estado_usuario (
     id INT PRIMARY KEY IDENTITY (1,1),
     nombre VARCHAR(30) UNIQUE NOT NULL
@@ -6,6 +17,7 @@ CREATE TABLE estado_usuario (
 CREATE TABLE usuario (
     id INT PRIMARY KEY IDENTITY (1,1),
     id_estado_usuario INT NOT NULL,
+    id_rol_usuario INT NOT NULL,
     nickname VARCHAR(30) UNIQUE NOT NULL,
     apodo NVARCHAR(30),
     password_hash VARCHAR(255) NOT NULL,
@@ -16,7 +28,11 @@ CREATE TABLE usuario (
     
     CONSTRAINT FK_USUARIO_ESTADO_USUARIO
     FOREIGN KEY (id_estado_usuario)
-    REFERENCES estado_usuario(id)
+    REFERENCES estado_usuario(id),
+    
+    CONSTRAINT FK_USUARIO_ROL_USUARIO
+    FOREIGN KEY (id_rol_usuario)
+    REFERENCES rol_usuario(id)
 );
 
 CREATE TABLE tipo_conversacion(

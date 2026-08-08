@@ -28,3 +28,17 @@ docker --version
 # Hola mundo
 
 sudo docker run hello-world
+
+
+
+#########################
+
+# Bajamos sql server
+
+sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
+
+# Configuramos sql server
+
+sudo docker run -d --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=ContraseñaSegura123!" -p 1433:1433 mcr.microsoft.com/mssql/server:2019-latest
+
+# Descargamos dbeaver e instalamos

@@ -1,0 +1,78 @@
+namespace ForoChat.Api.Entidades;
+
+public class Categoria
+{
+    public int Id { get; set; } 
+
+    public string Nombre { get; set; } = "";
+}namespace ForoChat.Api.Entidades;
+
+public class Conversacion
+{
+    public int Id { get; set; }
+    public string Titulo { get; set; } = "";
+    public string? Miniatura { get; set; }
+
+    // FK con EstadoConversacion
+    // FK con TipoConversacion
+    // FK con Categoria
+    // FK con Usuario (AutorOriginal/Creador)
+}namespace ForoChat.Api.Entidades;
+
+public class EstadoConversacion
+{
+    public int Id { get; set; } 
+
+    public string Nombre { get; set; } = "";
+}namespace ForoChat.Api.Entidades;
+
+public class EstadoUsuario
+{
+    public int Id { get; set; } 
+
+    public string Nombre { get; set; } = "";
+}namespace ForoChat.Api.Entidades;
+
+public class Mensaje
+{
+    public int Id { get; set; }
+    // FK con Mensaje (MensajePadre)
+    // FK con Usuario (Autor)
+    // FK con Conversacion
+    public string Contenido { get; set; } = "";
+    public string? Multimedia { get; set; }
+    public DateTime FechaEnvio { get; set; }
+}namespace ForoChat.Api.Entidades;
+
+public class RolUsuario
+{
+    public int Id { get; set; } 
+
+    public string Nombre { get; set; } = "";
+}namespace ForoChat.Api.Entidades;
+
+public class TipoConversacion
+{
+    public int Id { get; set; } 
+
+    public string Nombre { get; set; } = "";
+}namespace ForoChat.Api.Entidades;
+
+public class Usuario
+{
+    public int Id { get; set; }
+
+    public string Nombre { get; set; } = "";
+
+    public string Apodo { get; set; } = "";
+
+    public string PasswordHash { get; set; } = "";
+
+    public string Mail { get; set; } = "";
+
+    public string? Avatar { get; set; }
+
+    public DateTime FechaRegistro { get; set; }
+
+    public DateTime? FechaUltimaConexion { get; set; }
+}
